@@ -4,12 +4,12 @@ import { Data } from './basic-data';
 //nested data is ok, see accessorKeys in ColumnDef below
 export const colDefs: MRT_ColumnDef<Data>[] = [
   {
-    accessorKey: 'name.firstName', //access nested data with dot notation
+    accessorKey: 'firstName', //access nested data with dot notation
     header: 'First Name',
      filterVariant:'text'
   },
   {
-    accessorKey: 'name.lastName',
+    accessorKey: 'lastName',
     header: 'Last Name',
   },
   {
