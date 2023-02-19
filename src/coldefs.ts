@@ -1,10 +1,11 @@
 import { MRT_ColumnDef } from 'material-react-table';
 import { Data } from './basic-data';
 
-//nested data is ok, see accessorKeys in ColumnDef below
+// nested data is ok, see accessorKeys in ColumnDef below
+// but filtering and stuff does not work in the table
 export const colDefs: MRT_ColumnDef<Data>[] = [
   {
-    accessorKey: 'firstName', //access nested data with dot notation
+    accessorKey: 'firstName', 
     header: 'First Name',
      filterVariant:'text'
   },
@@ -13,7 +14,7 @@ export const colDefs: MRT_ColumnDef<Data>[] = [
     header: 'Last Name',
   },
   {
-    accessorKey: 'address', //normal accessorKey
+    accessorKey: 'address', 
     header: 'Address',
   },
   {

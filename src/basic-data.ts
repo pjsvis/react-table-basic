@@ -1,13 +1,13 @@
 export type Data = {
-  firstName?: string;
-  lastName?: string;
+  firstName: string;
+  lastName: string;
   address: string;
   city: string;
   state: string;
 
 }
 
-export const data: Data[] = [
+export const basicData: Data[] = [
   {
 
     firstName: 'John',
